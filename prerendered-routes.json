@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/ks-eventplaner": {},
+    "/ks-eventplaner/event": {},
+    "/ks-eventplaner/impressum": {},
+    "/ks-eventplaner/privacy-policy": {},
+    "/ks-eventplaner/start": {},
+    "/ks-eventplaner/tour": {}
+  }
+}
