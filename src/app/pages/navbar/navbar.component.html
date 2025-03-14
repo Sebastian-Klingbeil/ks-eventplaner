@@ -1,0 +1,14 @@
+<nav class="navbar navbar2" [ngClass]="navbarClass">
+    <!-- Logo links -->
+    <div class="nav-left">
+      <a href="/">
+        <img id="logo" src="/assets/image/Logo.png" alt="Logo" [routerLink]="'/start'">
+      </a>
+    </div>
+  
+    <!-- Mittige Navigation -->
+    <div class="nav-center">
+      <a class="animated-link" [ngClass]="navbarClass" href="/events" [routerLink]="'/event'">Events</a>
+      <a class="animated-link" [ngClass]="navbarClass" href="/touren" [routerLink]="'/tour'">Touren</a>
+    </div>
+  </nav>

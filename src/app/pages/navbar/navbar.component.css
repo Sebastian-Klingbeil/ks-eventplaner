@@ -1,0 +1,160 @@
+.navbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;  /* Transparent bei Anfang */
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;  /* Abstände zwischen den Bereichen */
+    align-items: center;  /* Vertikale Ausrichtung der Elemente */
+    padding: 10px 20px;  /* Abstände innerhalb der Navbar */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Standardzustand der Navbar */
+.navbar.transparent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar2.transparent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Zustand der Navbar nach dem Scrollen */
+  .navbar.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar li {
+    padding: 14px 20px;
+  }
+  
+  .navbar a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 25px;
+  }
+
+  .animated-link {
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .animated-link.transparent::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FE2900;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .animated-link.scrolled::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FE2900;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .animated-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+.nav-left {
+    flex: 1; /* Sorgt dafür, dass das Logo links bleibt */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-center {
+    flex: 2; /* Größerer Bereich für mittige Navigation */
+    display: flex;
+    justify-content: left;
+    gap: 1.5rem; /* Abstand zwischen Events und Touren */
+}
+
+.nav-right {
+    flex: 1; /* Sorgt dafür, dass die Icons ganz rechts stehen */
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+#logo {
+    width: 100px; /* Logo-Größe anpassen */
+    height: auto;
+    display: block;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 2vw;
+}
+
+.nav-right {
+  padding-right: 2vw;
+}
+
+.nav-right img {
+  width: 30px; /* Größe der Icons */
+  height: auto;
+  z-index: 10;
+}
+
+#insta.transparent, #facebook.transparent {
+  filter: invert(1);
+}
+
+#insta.scrolled, #facebook.scrolled {
+  filter: invert(0);
+}
