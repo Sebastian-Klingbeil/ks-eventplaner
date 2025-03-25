@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./pages/navbar/navbar.component";
-import { ApiService } from './api.service';
+import { ApiService } from './service/api.service';
 
 @Component({
   selector: 'app-root',
