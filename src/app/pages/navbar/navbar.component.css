@@ -158,3 +158,18 @@
 #insta.scrolled, #facebook.scrolled {
   filter: invert(0);
 }
+
+/* Profile */
+.profile {
+  display: flex; /* Stellt sicher, dass das Profilbild sichtbar bleibt */
+  align-items: center;
+  justify-content: center;
+  padding-right: 2vw;
+}
+
+.profile img {
+  width: 40px; /* Größe des Profilbilds anpassen */
+  height: 40px;
+  border-radius: 50%; /* Rundes Profilbild */
+  object-fit: cover;
+}

@@ -5,6 +5,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './user/user.module';
 import { User } from './user/entities/user.entity';
+import { EventListModule } from './event-list/event-list.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { User } from './user/entities/user.entity';
       synchronize: true,
     }),
     UserModule,
+    EventListModule,
   ],
   controllers: [AppController],
   providers: [AppService],
