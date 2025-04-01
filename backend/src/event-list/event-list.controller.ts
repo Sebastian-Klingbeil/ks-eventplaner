@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { EventListService } from './event-list.service';
 import { CreateEventListDto } from './dto/create-event-list.dto';
